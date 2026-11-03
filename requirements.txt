@@ -2,4 +2,3 @@ torch
 Pillow
 torchvision 
 opencv-python-headless
-streamlit-webrtc
