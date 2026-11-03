@@ -9,7 +9,7 @@ class_names = ['1 BD', '10 BD', '100fils', '20 BD', '25fils', '5 BD', '500 fils'
 
 model = models.resnet18()
 model.fc = nn.Linear(model.fc.in_features, len(class_names))
-model.load_state_dict(torch.load("model.pth", map_location="cpu"))
+model.load_state_dict(torch.load("model_small.pth", map_location="cpu"))
 model.eval()
 
 tf = transforms.Compose([
